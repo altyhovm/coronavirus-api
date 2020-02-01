@@ -1,15 +1,19 @@
 const axios = require('axios');
 var ncov = {
     getNews: async function() {
-        let res = await axios.get('https://coronavirus-monitor.ru/api/v1/statistics/get-news');
+        const res = await axios.get('https://coronavirus-monitor.ru/api/v1/statistics/get-news');
         return res.data.data;
     },
     getCountries: async function() {
-        let res = await axios.get('https://coronavirus-monitor.ru/api/v1/statistics/get-countries');
+        const res = await axios.get('https://coronavirus-monitor.ru/api/v1/statistics/get-countries');
+        return res.data.data;
+    },
+    getСities: async function() {
+        const res = await axios.get('https://coronavirus-monitor.ru/api/v1/statistics/get-cities');
         return res.data.data;
     },
     getRussianSubjects: async function() {
-        let res = await axios.get('https://coronavirus-monitor.ru/api/v1/statistics/get-russian-subjects');
+        const res = await axios.get('https://coronavirus-monitor.ru/api/v1/statistics/get-russian-subjects');
         return res.data.data;
     }
 }
