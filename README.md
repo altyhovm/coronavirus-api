@@ -11,7 +11,7 @@ $ npm i coronavirus-api
 const ncov = require('coronavirus-api')
 ```
 
-Дальше просто. Есть 3 метода: getNews, getCountries, getRussianSubjects.
+Дальше просто. Есть 4 метода: getNews, getCountries, getСities, getRussianSubjects.
 
 Думаю, по названию методов понятно какой за что отвечает.
 #
